@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 172732159}
   - component: {fileID: 172732158}
   - component: {fileID: 172732161}
-  - component: {fileID: 172732162}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -209,25 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReplacementShader: {fileID: 4800000, guid: 30ad4ba1cbad1de43ba947efcd3c4d0d, type: 3}
-  OverDrawColor: {r: 0.03529412, g: 0.03529412, b: 0.10196079, a: 1}
---- !u!114 &172732162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172732157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4d8182470267a049808d8803adaf26f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlurMaterial: {fileID: 0}
-  AddMaterial: {fileID: 0}
-  Iterations: 0
-  DownRes: 0
-  Size: 0
-  Intensity: 0
+  OverDrawColor: {r: 0.1254902, g: 0.047058824, b: 0.015720673, a: 1}
 --- !u!1001 &214897880
 PrefabInstance:
   m_ObjectHideFlags: 0

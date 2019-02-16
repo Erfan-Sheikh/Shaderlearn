@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/02_TexturingWithTransparency"
+﻿Shader "MakingStuffLookGood/02_TexturingWithTransparency"
 {
     Properties
     {

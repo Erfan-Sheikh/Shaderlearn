@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/04_GreyscaleMulCol"
+﻿Shader "MakingStuffLookGood/04_GreyscaleMulCol"
 {
     Properties
     {

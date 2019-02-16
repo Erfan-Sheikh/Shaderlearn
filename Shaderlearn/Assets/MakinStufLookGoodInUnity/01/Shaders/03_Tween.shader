@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/03_Tween"
+﻿Shader "MakingStuffLookGood/03_Tween"
 {
     Properties
     {

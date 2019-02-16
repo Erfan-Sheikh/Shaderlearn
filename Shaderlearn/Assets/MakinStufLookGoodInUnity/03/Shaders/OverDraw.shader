@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/ReplacementShaders/OverDraw"
+﻿Shader "MakingStuffLookGood/ReplacementShaders/OverDraw"
 {
     Properties
     {

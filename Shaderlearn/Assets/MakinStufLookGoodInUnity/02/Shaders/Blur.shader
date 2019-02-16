@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/ImageEffects/BlurEffect"
+﻿Shader "MakingStuffLookGood/ImageEffects/BlurEffect"
 {
 	Properties
 	{

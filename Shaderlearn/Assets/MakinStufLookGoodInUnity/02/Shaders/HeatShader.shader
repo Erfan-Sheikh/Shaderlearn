@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/ImageEffects/HeatShader"
+﻿Shader "MakingStuffLookGood/ImageEffects/HeatShader"
 {
     Properties
     {

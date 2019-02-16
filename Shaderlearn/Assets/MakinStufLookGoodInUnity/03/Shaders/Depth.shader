@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/ReplacementShaders/Depth" //sets of subshaders in a single shader program that we can tell our camera to render using them
+﻿Shader "MakingStuffLookGood/ReplacementShaders/Depth" //sets of subshaders in a single shader program that we can tell our camera to render using them
 {
     Properties
     {

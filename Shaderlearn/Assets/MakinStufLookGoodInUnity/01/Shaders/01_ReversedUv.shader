@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLokkGood/01_ReversedUv"
+﻿Shader "MakingStuffLookGood/01_ReversedUv"
 {
     Properties
     {

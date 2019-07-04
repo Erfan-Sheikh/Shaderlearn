@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLookGood/02_TexturingWithTransparency"
+﻿Shader "MakingStuffLookGood/01/_BlendOneOne"
 {
     Properties
     {
@@ -14,7 +14,7 @@
 
         Pass
         {
-            Blend SrcAlpha OneMinussrcAlpha //SrcColor*SrcAlpha + DstColor*OneMinusSrcAlpha (Think In Transparent Pic)
+            Blend One One //Additive Blend
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 01
-  m_Shader: {fileID: 4800000, guid: efe09b7b38c6d434bb871c6e7d7b1b15, type: 3}
+  m_Name: Alpha Blending
+  m_Shader: {fileID: 4800000, guid: 2a4ecd3615d72de4b9ca3e24087b85e7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2f92f6199d05be64eaee4136f60f8eaa, type: 3}
+        m_Texture: {fileID: 2800000, guid: bf97fa856e89936429300d346535f303, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SecondTex:
-        m_Texture: {fileID: 2800000, guid: 27b73f744741a4c42ac551c1a180ad7d, type: 3}
+        m_Texture: {fileID: 2800000, guid: bf97fa856e89936429300d346535f303, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:

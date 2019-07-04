@@ -1,18 +1,20 @@
-﻿Shader "MakingStuffLookGood/01/04_GreyscaleMulCol"
+﻿Shader "MakingStuffLookGood/01/02_AlphaBlending"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Color ("ColorTint", color) = (1, 1, 1, 1)
     }
     SubShader
     {
+        Tags { 
 
+            "Queue" = "Transparent" //so that our sprite renders after the opaque geos in the scene
+        } 
         LOD 100
 
         Pass
         {
-            Blend SrcAlpha OneMinusSrcAlpha
+            Blend SrcAlpha OneMinussrcAlpha //SrcColor*SrcAlpha + DstColor*OneMinusSrcAlpha (Think In Transparent Pic)
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -35,7 +37,6 @@
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-            float4 _Color;
 
             v2f vert (appdata v) //takes app data returns v2f
             {
@@ -47,10 +48,8 @@
 
             fixed4 frag (v2f i) : SV_Target //takes v2d returns color float4
             {
-                float4 Mycolor = tex2D(_MainTex, i.uv);
-                float lum = Mycolor.r * 0.3 + Mycolor.g * 0.59 + Mycolor.b * 0.11;
-                float4 gsg = float4 (lum, lum, lum, Mycolor.a);
-                return gsg * _Color;
+                float4 color = tex2D(_MainTex, i.uv);
+                return color;
             }
             ENDCG
         }

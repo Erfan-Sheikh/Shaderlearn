@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLookGood/ImageEffects/HeatShader"
+﻿Shader "MakingStuffLookGood/02_ImageEffects/HeatShader"
 {
     Properties
     {
@@ -52,7 +52,7 @@
             fixed4 frag (v2f i) : SV_Target
             {
                 float2 disp = tex2D(_DispTex, i.uv + _Time.x).xy;
-                disp = ((disp * 2) - 1) * _Magntude;
+                disp = ((disp * 2) - 1) * _Magntude; //change range from 0,1 to -1,+1
                 fixed4 col = tex2D(_MainTex, i.uv + disp);
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);

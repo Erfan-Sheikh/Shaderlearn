@@ -1,4 +1,4 @@
-﻿Shader "MakingStuffLookGood/ImageEffects/BlurEffect"
+﻿Shader "MakingStuffLookGood/02_ImageEffects/BlurEffect"
 {
 	Properties
 	{
@@ -57,12 +57,12 @@
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				//fixed mask = tex2D (_MaskTex, i.uv).r;
-				//fixed invertedMask = float4 (1, 1, 1, 1) - mask;
-				//fixed4 Noblur = tex2D (_MainTex, i.uv);
+				fixed mask = clamp (0, 1, tex2D (_MaskTex, i.uv).r * 2);
+				fixed invertedMask = float4 (1, 1, 1, 1) - mask;
+				fixed4 Noblur = tex2D (_MainTex, i.uv) ;
 				fixed4 Maincolor = box (_MainTex, i.uv, _MainTex_TexelSize);
 
-				fixed4 col = Maincolor;
+				fixed4 col = lerp (Maincolor, Noblur, mask);
 
 				return col;
 			}

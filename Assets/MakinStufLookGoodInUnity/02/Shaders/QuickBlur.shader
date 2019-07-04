@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Hidden/QuickBlur"
+Shader "Hidden/MakingStuffLookGood/02_ImageEffects/QuickBlur"
 {
 	Properties
 	{
